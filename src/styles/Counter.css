@@ -1,0 +1,76 @@
+.Counter {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.Counter.warning {
+  animation: pulse 2s infinite;
+}
+
+.Counter .container {
+  margin: 0 auto;
+}
+
+.Counter .counter {
+  border: 4px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 50%;
+  margin-left: 25%
+}
+
+.Counter .counter .label {
+  text-align: center;
+  font-size: 1.3em;
+  padding: 20px;
+}
+
+.Counter .counter .label.to-high {
+  background-color: orange;
+}
+
+.Counter .counter .controls {
+  display: flex;
+  flex-direction: row;
+}
+
+.Counter .counter .controls button {
+  flex: 1;
+  padding: 20px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 2em;
+
+}
+
+.Counter .counter .controls button.moins {
+  background-color: lightblue;
+}
+
+.Counter .counter .controls button.plus {
+  background-color:lightgreen;
+}
+
+.Counter .warning-message {
+  background-color: yellow;
+  color: red;
+}
+
+@keyframes pulse {
+	0% {
+		background-color: white;
+	}
+
+	50% {
+		background-color: red;
+	}
+
+	100% {
+		background-color: white;
+	}
+}

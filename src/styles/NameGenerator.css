@@ -1,0 +1,31 @@
+.NameGenerator {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container h1{
+  text-align: center;
+}
+.persons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.display-mode-selector{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
